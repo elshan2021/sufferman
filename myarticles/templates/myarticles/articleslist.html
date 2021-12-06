@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>aaaaaa</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+  </head>
+  <body>
+    {% for i in mart %}
+    <h2>
+      <a href="#"> {{i.title}}</a>
+    </h2>
+    <p>{{i.snippet}}</p>
+    <p>{{i.date}}</p>
+    {% endfor %}
+  </body>
+</html>
